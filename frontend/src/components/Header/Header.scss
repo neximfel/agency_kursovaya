@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-family: "Jost", serif;
+    font-weight: bold;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: transparent;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+input{
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+.header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #F5F5F5;
+    padding-inline: 30px;
+    &_inside{
+        max-width: 1420px;
+        width: 100%;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_logo{
+            width: 140px;
+            height: 54px;
+        }
+        &_nav{
+            display: flex;
+            max-width: 454px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            &_link{
+                color: #71717A;
+                font-size: 1.125rem;
+                padding: 5px 15px;
+                padding-bottom: 10px;
+                &:hover{
+                    text-decoration: underline;
+                }
+                &.active{
+                    color: #000000;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &_buttons{
+            display: flex;
+            gap: 20px;
+            button{
+                border-radius: 100px;
+                color: #000000;
+                font-size: 1.125rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+            }
+            &_login{
+                background: none;
+                border: 1px solid #FFD67E;
+                width: 126px;
+                &:hover{
+                    border: none;
+                    color: #FFFFFF;
+                    background-color: #525252;
+                }
+            }
+            &_signup{
+                background-color: #FFD67E;
+                width: 144px;
+                &:hover{
+                    background: none;
+                    border: 1px solid #525252;
+                }
+            }
+        }
+    }
+}

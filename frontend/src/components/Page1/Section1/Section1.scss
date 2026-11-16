@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-family: "Jost", serif;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: transparent;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+input{
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+.page1_section1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &_inside{
+        margin: 0 auto;
+        max-width: 1420px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_top{
+            padding-inline: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1100px;
+            width: 100%;
+            gap: 40px;
+            &_text{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                h1{
+                    font-size: 6rem;
+                    color: #000000;
+                    font-family: "Marcellus", serif;
+                }
+                p{
+                    max-width: 700px;
+                    font-size: 1.125rem;
+                    color: #525252;
+                }
+                a{
+                    width: 203px;
+                    height: 64px;
+                    background-color: #000000;
+                    border-radius: 100px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 32px;
+                    padding-right: 10px;
+                    justify-content: space-between;
+                    p{
+                        font-size: 1.125rem;
+                        color: #FFFFFF;
+                    }
+                    div{
+                        width: 46px;
+                        height: 46px;
+                        background-color: #FFFFFF;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &:hover{
+                        padding-left: 10px;
+                        p{
+                            display: none;
+                        }
+                        div{
+                            width: 100%;
+                            border-radius: 85px;
+                        }
+                    }
+                }
+            }
+            &_pictures{
+                display: flex;
+                gap: 12px;
+                display: flex;
+                align-items: center;
+                p{
+                    font-size: 1.125rem;   
+                    color: #000000;
+                }
+            }
+        }
+        &_logos{
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            h3{
+                margin: 0 auto;
+                font-size: 2rem;
+                color: #000000;
+                font-family: "Marcellus", serif;
+            }
+            &_images{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    &_swiper{
+        width: 100%;
+        user-select: none;
+        display: flex;
+        .swiper-wrapper{
+            align-items: center;
+        }
+        &_slide{
+            width: auto !important;
+            height: auto;
+            flex-shrink: 0;
+            overflow: hidden;
+            border-radius: 16px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                pointer-events: none; // Чтобы браузер не перетаскивал картинку вместо свайпа
+            }
+        }
+    }
+}

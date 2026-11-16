@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-family: "Jost", serif;
+    font-weight: normal;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: transparent;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+input{
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+.page1_section3{
+    width: 100%;
+    &_black{
+        width: 100%;
+        background-image: url(../../../assets/Page1/Section3/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 1375px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 30px;
+        &_inside{
+            height: 1150px;
+            margin: 0 auto;
+            max-width: 1420px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            &_title{
+                width: 100%;
+                p{
+                    font-size: 1.125rem;
+                    color: #FFD67E;
+                }
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h2{
+                        max-width: 820px;
+                        font-size: 4rem;
+                        color: #FFFFFF;
+                        font-family: "Marcellus", serif;
+                    }
+                    a{
+                        display: flex;
+                        gap: 8px;
+                        width: 179px;
+                        height: 56px;
+                        border-radius: 100px;
+                        border: 1px solid #404040;
+                        background-color: #27272A;
+                        font-size: 1.125rem;
+                        color: #FFFFFF;
+                        align-items: center;
+                        justify-content: center;
+                        &:hover{
+                            gap: 15px;
+                        }
+                    }
+                }
+            }
+            &_punkts{
+                border-top: 1px solid #27272A;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                &_punkt{
+                    border-bottom: 1px solid #27272A;
+                    height: 177px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 50px;
+                    &:hover{
+                        .page1_section3_black_inside_punkts_punkt_title{
+                            h3{
+                                color: #FFD67E;
+                            }
+                        }
+                        .page1_section3_black_inside_punkts_punkt_descr{
+                            a{
+                                border: 1px solid #FFD67E;
+                                svg{
+                                    path{
+                                        fill: #FFD67E;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &_title{
+                        display: flex;
+                        align-items: center;
+                        gap: 40px;
+                        h3{
+                            font-size: 3.125rem;
+                            color: #FFFFFF;
+                            font-family: "Marcellus", serif;
+                            transition: all ease 0.3s;
+                        }
+                    }
+                    &_descr{
+                        display: flex;
+                        align-items: center;
+                        gap: 64px;
+                        p{
+                            color: #A1A1AA;
+                            font-size: 1.125rem;
+                            max-width: 480px;
+                        }
+                        a{
+                            width: 46px;
+                            height: 46px;
+                            border-radius: 50%;
+                            border: 1px solid #FFFFFF;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            svg{
+                                path{
+                                    transition: all ease 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

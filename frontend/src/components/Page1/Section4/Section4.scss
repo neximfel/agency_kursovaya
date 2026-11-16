@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-family: "Jost", serif;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: transparent;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+input{
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+.page1_section4{
+    width: 100%;
+    padding-inline: 30px;
+    &_inside{
+        margin: 0 auto;
+        display: flex;
+        gap: 70px;
+        max-width: 1420px;
+        width: 100%;
+        align-items: center;
+        &_photo{
+            width: 100%;
+        }
+        &_text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 590px;
+            &_about{
+                width: 176px;
+                height: 47px;
+                border-radius: 100px;
+                background-color: #FFF4DE;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                    font-size: 1.125rem;
+                    color: #000000;
+                }
+            }
+            h2{
+                font-size: 4rem;
+                color: #000000;
+                font-family: "Marcellus", serif;
+            }
+            &_descr{
+                max-width: 650px;
+                font-size: 1.125rem;
+                color: #525252;
+            }
+            &_punkts{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 16px;
+                &_punkt{
+                    display: flex;
+                    gap: 12px;
+                    &_mark{
+                        background-color: #FEF3C7;
+                        width: 34px;
+                        height: 34px;
+                        border-radius: 40%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        div{
+                            background-color: #FDE68A;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    p{
+                        font-size: 1.125rem;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
