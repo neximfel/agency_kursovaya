@@ -1,9 +1,11 @@
-cd agency/backend
-npm start
-
+ ```bash
+   cd agency/backend
+   npm start
+   ```
 
 then 
 
-
-cd ../frontend
-npm run dev 
+```bash
+   cd ../frontend
+   npm run dev
+   ```
