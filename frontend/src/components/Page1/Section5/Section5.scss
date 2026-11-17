@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-weight: normal;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: transparent;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+input{
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+
+
+.page1_section5{
+    padding-block: 100px;
+    width: 100%;
+    padding-inline: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFF9ED;
+    &_inside{
+        max-width: 1420px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        &_portfolio{
+            width: fit-content;
+            padding: 10px 36px;
+            background-color: #FFF4DE;
+            border-radius: 100px;
+            p{
+                font-family: "Jost", serif;
+                color: #000000;
+                font-size: 1.125rem;
+                font-weight: bold;
+            }
+        }
+        h2{
+            text-align: center;
+            font-family: "Marcellus", serif;
+            color: #000000;
+            font-size: 4rem;
+        }
+        &_main{
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            &_event{
+                align-items: center;
+                display: flex;
+                gap: 30px;
+                justify-content: space-between;
+                min-height: 418px;
+                &.right{
+                    flex-direction: row-reverse;
+                }
+                &_image{
+                    padding: 24px 24px;
+                    border-radius: 40px;
+                    width: 100%;
+                    max-width: 695px;
+                    max-height: 420px;
+                    height: 100%;
+                    &_class{
+                        background-color: #262626;
+                        border-radius: 100px;
+                        padding: 12px 20px;
+                        width: fit-content;
+                        height: fit-content;
+                        p{
+                            font-family: "Jost", serif;
+                            color: #FFFFFF;
+                            font-size: 1.125rem;
+                            font-weight: 500;
+                        }
+                    }
+                    &.right{
+                        display: flex;
+                        justify-content: end;
+                    }
+                }
+                &_text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    max-width: 45%;
+                    h3{
+                        font-family: "Marcellus", serif;
+                        color: #000000;
+                        font-size: 3.125rem;
+                    }
+                    &_client{
+                        color: #000000;
+                        font-size: 1.875rem;
+                        font-weight: 500;
+                    }
+                    &_description{
+                        color: #525252;
+                        font-size: 1.125rem;
+                        font-weight: 500;
+                        span{
+                            color: #000000;
+                        }
+                    }
+                    a{
+                        width: 168px;
+                        height: 56px;
+                        border-radius: 100px;
+                        border: 1px solid #D4D4D4;
+                        color: #000000;
+                        font-size: 1.125rem;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        &:hover{
+                            gap: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

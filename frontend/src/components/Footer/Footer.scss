@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-family: "Jost", serif;
+    font-weight: 500;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: transparent;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+input{
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &_top{
+        background-color: #040306;
+        padding-inline: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 741px;
+        &_inside{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1420px;
+            width: 100%;
+            gap: 30px;
+            &_left{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                max-width: 648px;
+                h2{
+                    font-family: "Marcellus", serif;
+                    font-size: 4rem;
+                    color: #FFFFFF;
+                    span{
+                        font-family: "Marcellus", serif;
+                        background: linear-gradient(90deg, #FCD47D 0%, #2C271E 100%);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                    }
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 1.125rem;
+                    color: #D4D4D4;
+                }
+                &_socials{
+                    display: flex;
+                    gap: 18px;
+                    a{
+                        border-radius: 50%;
+                        // &:hover{
+                        //     box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.6);
+                        // }
+                    }
+                }
+            }
+            &_mid{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                p{
+                    font-size: 1.5rem;
+                    color: #FFD67E;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 13px;
+                    a{
+                        // width: fit-content;
+                        font-weight: 400;
+                        font-size: 1.125rem;
+                        color: #D4D4D4;
+                        padding: 5px 4px;
+                        transition: all ease 0.3s;
+                        &:hover{
+                            // border-bottom: 1px solid #D4D4D4;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            &_right{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                p{
+                    font-size: 2rem;
+                    color: #FFD67E;
+                    font-family: "Marcellus", serif;
+                }
+                form{
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #262626;
+                    border: 1px solid #404040;
+                    padding: 6px 6px;
+                    border-radius: 100px;
+                    max-width: 472px;
+                    width: 100%;
+                    input{
+                        display: flex;
+                        align-items: center;
+                        padding-inline: 34px;
+                        width: fit-content;
+                        font-size: 1rem;
+                        color: #FFFFFF;
+                        font-weight: 400;
+                        &::placeholder{
+                            color: #D4D4D4;
+                            font-size: 1rem;
+                            font-weight: 400;
+                        }
+                    }
+                    button{
+                        width: 156px;
+                        height: 59px;
+                        border-radius: 91px;
+                        background-color: #FFD67E;
+                        color: #000000;
+                        font-size: 1.125rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    &_bot{
+        padding-inline: 30px;
+        min-height: 102px;
+        width: 100%;
+        background-color: #171717;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_inside{
+            height: 100%;
+            max-width: 1420px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+                color: #D6D3D1;
+                font-size: 1.125rem;
+            }
+        }
+    }
+}
