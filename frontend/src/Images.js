@@ -26,11 +26,11 @@ import Image2Page1Section7 from "./assets/Page1/Section7/image2.jpg"
 import ArrowPage1Section7 from "./assets/Page1/Section7/arrow_to_right.svg"
 
 import InstPage1Section8 from "./assets/Page1/Section8/inst.svg"
-import Image1Page1Section8 from "./assets/Page1/Section8/image1.svg"
-import Image2Page1Section8 from "./assets/Page1/Section8/image2.svg"
-import Image3Page1Section8 from "./assets/Page1/Section8/image3.svg"
-import Image4Page1Section8 from "./assets/Page1/Section8/image4.svg"
-import Image5Page1Section8 from "./assets/Page1/Section8/image5.svg"
+import Image1Page1Section8 from "./assets/Page1/Section8/image1.jpg"
+import Image2Page1Section8 from "./assets/Page1/Section8/image2.jpg"
+import Image3Page1Section8 from "./assets/Page1/Section8/image3.jpg"
+import Image4Page1Section8 from "./assets/Page1/Section8/image4.jpg"
+import Image5Page1Section8 from "./assets/Page1/Section8/image5.jpg"
 
 
 
