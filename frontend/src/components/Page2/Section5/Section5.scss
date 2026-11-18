@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-family: "Jost", serif;
+    font-weight: 400;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: transparent;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+input{
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+.page2_section5{
+    width: 100%;
+    background-color: #FFF9ED;
+    padding: 100px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_inside{
+        max-width: 1420px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        &_title{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 50px;
+            &_left{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                &_class{
+                    width: 108px;
+                    height: 47px;
+                    background-color: #FFF4DE;
+                    border-radius: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    color: #000000;
+                }
+                h2{
+                    font-size: 4rem;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    color: #000000;
+                    font-family: "Marcellus", serif;
+                }
+            }
+            &_description{
+                max-width: 581px;
+                width: 100%;
+                font-size: 1.125rem;
+                line-height: 1.5;
+                font-weight: 400;
+                color: #525252;
+            }
+        }
+        &_main{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            &_card{
+                width: 100%;
+                max-width: 333px;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                &_photo{
+                    width: 100%;
+                    height: 384px;
+                    object-fit: cover;
+                    border-radius: 24px;
+                }
+                &_info{
+                    margin-top: -48px;
+                    position: relative;
+                    z-index: 2;
+                    width: 100%;
+                    height: 163px;
+                    background-color: #FFD67E;
+                    border-radius: 28px;
+                    padding: 18px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 8px;
+                    h4{
+                        font-size: 1.875rem;
+                        line-height: 36px;
+                        font-weight: 400;
+                        color: #000000;
+                    }
+                    p{
+                        font-size: 1.125rem;
+                        line-height: 1.5;
+                        font-weight: 400;
+                        color: #525252;
+                    }
+                    &_socials{
+                        margin-top: 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 6px;
+                        a{
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            &:hover{
+                                opacity: 0.7;
+                                transform: translateY(-2px);
+                            }
+                            img{
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

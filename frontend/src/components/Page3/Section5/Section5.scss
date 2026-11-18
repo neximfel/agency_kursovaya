@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-family: "Jost", serif;
+    font-weight: 400;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: transparent;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+input{
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+.page3_section5{
+    width: 100%;
+    padding-inline: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_inside{
+        max-width: 1420px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        &_header{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            &_subtitle{
+                font-size: 1.125rem;
+                line-height: 1.5;
+                font-weight: 400;
+                color: #000000;
+            }
+            &_row{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 40px;
+                h2{
+                    font-family: "Marcellus", serif;
+                    font-size: 4rem;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    color: #1C1C1C;
+                    white-space: nowrap;
+                }
+                p{
+                    max-width: 575px;
+                    width: 100%;
+                    font-size: 1.125rem;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    color: #525252;
+                }
+                a{
+                    width: 179px;
+                    height: 56px;
+                    flex-shrink: 0;
+                    border-radius: 100px;
+                    border: 1px solid #E5E5E5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    color: #000000;
+                    &:hover{
+                        gap: 14px;
+                    }
+                    img{
+                        width: 21px;
+                        height: 21px;
+                    }
+                }
+            }
+        }
+        &_list{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            &_item{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 32px;
+                padding-block: 48px;
+                border-bottom: 1px solid #E5E5E5;
+                &:first-child{
+                    padding-top: 0;
+                }
+                &:last-child{
+                    padding-bottom: 0;
+                    border-bottom: none;
+                }
+                &_left{
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+                    &_date{
+                        width: 91px;
+                        flex-shrink: 0;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+                        span{
+                            font-family: "Marcellus", serif;
+                            font-size: 4rem;
+                            line-height: 1.2;
+                            font-weight: 400;
+                            color: #000000;
+                        }
+                        p{
+                            font-size: 1.125rem;
+                            line-height: 1.5;
+                            font-weight: 400;
+                            color: #525252;
+                            white-space: nowrap;
+                        }
+                    }
+                    &_photo{
+                        width: 301px;
+                        height: 287px;
+                        border-radius: 28px;
+                        object-fit: cover;
+                        flex-shrink: 0;
+                    }
+                    &_info{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 21px;
+                        max-width: 695px;
+                        h3{
+                            font-family: "Marcellus", serif;
+                            font-size: 2.6875rem;
+                            line-height: 1.5;
+                            font-weight: 400;
+                            color: #000000;
+                        }
+                        &_meta{
+                            display: flex;
+                            align-items: center;
+                            gap: 18px;
+                            &_city{
+                                font-family: "Marcellus", serif;
+                                font-size: 1.75rem;
+                                line-height: 1.5;
+                                font-weight: 400;
+                                color: #000000;
+                                min-width: 121px;
+                            }
+                            &_time{
+                                display: flex;
+                                align-items: center;
+                                gap: 18px;
+                                &_icon{
+                                    width: 54px;
+                                    height: 54px;
+                                    flex-shrink: 0;
+                                    border-radius: 50%;
+                                    background-color: #FFF4DE;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    img{
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                }
+                                p{
+                                    font-size: 1.125rem;
+                                    line-height: 1.5;
+                                    font-weight: 400;
+                                    color: #525252;
+                                }
+                            }
+                        }
+                    }
+                }
+                &_price{
+                    width: 138px;
+                    height: 56px;
+                    flex-shrink: 0;
+                    border-radius: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    color: #1C1C1C;
+                    &.free{
+                        background-color: #FFF4DE;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}

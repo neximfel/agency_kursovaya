@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-family: "Jost", serif;
+    font-weight: 400;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: transparent;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+input{
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+.page3_section2{
+    width: 100%;
+    overflow: hidden;
+    &_swiper{
+        width: 100%;
+        padding-bottom: 78px;
+        user-select: none;
+        .swiper-wrapper{
+            align-items: center;
+        }
+        .swiper-pagination{
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+        }
+        .swiper-pagination-bullet{
+            width: 14px;
+            height: 14px;
+            background-color: #E4E4E7;
+            opacity: 1;
+            margin: 0 !important;
+            transition: all 0.25s ease;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #FFD67E;
+        }
+    }
+    &_slide{
+        width: 453px !important;
+        flex-shrink: 0;
+        transition: width 0.35s ease;
+        &_card{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            &_image{
+                width: 100%;
+                height: 770px;
+                border-radius: 20px;
+                object-fit: cover;
+                pointer-events: none;
+                transition: height 0.35s ease;
+            }
+            &_info{
+                display: none;
+                flex-direction: column;
+                gap: 12px;
+                max-width: 569px;
+                &_category{
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    color: #000000;
+                    text-transform: uppercase;
+                }
+                h3{
+                    font-family: "Marcellus", serif;
+                    font-size: 4rem;
+                    line-height: 1.5;
+                    font-weight: 400;
+                    color: #000000;
+                }
+                a{
+                    margin-top: 12px;
+                    width: fit-content;
+                    height: 56px;
+                    padding-inline: 10px;
+                    border-radius: 100px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    color: #000000;
+                    &:hover{
+                        gap: 14px;
+                    }
+                    img{
+                        width: 21px;
+                        height: 21px;
+                    }
+                }
+            }
+        }
+        &.swiper-slide-active{
+            width: 695px !important;
+            .page3_section2_slide_card_image{
+                height: 457px;
+            }
+            .page3_section2_slide_card_info{
+                display: flex;
+            }
+        }
+    }
+}

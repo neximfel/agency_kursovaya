@@ -44,6 +44,60 @@ app.get('/api/reviews', async (req, res) => {
   }
 });
 
+app.get('/api/services_portfolio', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM services_portfolio ORDER BY sort_order ASC, id ASC');
+    res.json(result.rows);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'ошибка при получении портфолио' });
+  }
+});
+
+app.get('/api/next_events', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM next_events ORDER BY sort_order ASC, id ASC');
+    res.json(result.rows);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'ошибка при получении ближайших мероприятий' });
+  }
+});
+
+app.get('/api/service_articles', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM service_articles ORDER BY id ASC');
+    res.json(result.rows);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'ошибка при получении статьи' });
+  }
+});
+
+app.get('/api/faqs', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM faqs ORDER BY sort_order ASC, id ASC');
+    res.json(result.rows);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: 'ошибка при получении вопросов' });
+  }
+});
+
+app.post('/api/contact_messages', async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
+    const result = await pool.query(
+      'INSERT INTO contact_messages (name, email, message) VALUES ($1, $2, $3) RETURNING *',
+      [name, email, message]
+    );
+    res.json(result.rows[0]);
+  } catch (e) {
+    console.error('ошибка', e.message);
+    res.status(500).json({ error: 'ошибка отправки сообщения' });
+  }
+});
+
 app.post('/api/subscribe', async (req, res) => {
   try {
     const result = await pool.query(

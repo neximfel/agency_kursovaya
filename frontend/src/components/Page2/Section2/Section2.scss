@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-family: "Jost", serif;
+    font-weight: 400;
+}
+button{
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: transparent;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.25s ease;
+}
+input{
+    outline: none;
+    border-style: none;
+    background-color: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+.page2_section2{
+    background-image: url(../../../assets/Page2/Section2/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_inside{
+        max-width: 1420px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        &_left{
+            max-width: 720px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            img{
+                width: 100%;
+            }
+            div{
+                display: flex;
+                gap: 25px;
+            }
+        }
+        &_right{
+            display: flex;
+            flex-direction: column;
+            max-width: 585px;
+            width: 100%;
+            gap: 48px;
+            &_title{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                &_class{
+                    background-color: #262626;
+                    border: 1px solid #404040;
+                    border-radius: 100px;
+                    padding: 10px 25px;
+                    color: #FFFFFF;
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    width: fit-content;
+                }
+                h2{
+                    font-size: 4rem;
+                    color: #FFFFFF;
+                    font-family: "Marcellus", serif;
+                }
+                &_description{
+                    color: #A3A3A3;
+                    font-size: 1.125rem;
+                }
+            }
+            &_perks{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                &_cat{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    div{
+                        background-color: #262626;
+                        border: 1px solid #404040;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 68px;
+                        height: 68px;
+                        border-radius: 50%;
+                    }
+                    h5{
+                        font-weight: 500;
+                        color: #FFFFFF;
+                        font-size: 2.125rem;
+                    }
+                    p{
+                        font-size: 1.125rem;
+                        color: #A3A3A3;
+                    }
+                }
+            }
+        }
+    }
+}
