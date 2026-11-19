@@ -112,3 +112,60 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .page1_section4{
+        &_inside{
+            flex-direction: column-reverse;
+            gap: 40px;
+            &_photo{
+                max-width: 600px;
+                img{
+                    width: 100%;
+                }
+            }
+            &_text{
+                height: auto;
+                gap: 24px;
+                h2{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page1_section4{
+        padding-inline: 24px;
+        &_inside{
+            gap: 24px;
+            &_text{
+                align-items: center;
+                text-align: center;
+                &_about{
+                    height: 42px;
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+                h2{
+                    font-size: 2.25rem;
+                }
+                &_descr{
+                    font-size: 1rem;
+                }
+                &_punkts{
+                    align-items: flex-start;
+                    text-align: left;
+                    &_punkt{
+                        align-items: center;
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

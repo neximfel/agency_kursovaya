@@ -250,3 +250,121 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .page4_section1{
+        &_inside{
+            gap: 36px;
+            h2{
+                font-size: 3rem;
+            }
+            &_main{
+                flex-direction: column;
+                gap: 40px;
+                &_left{
+                    max-width: 100%;
+                    &_hero{
+                        height: 420px;
+                    }
+                    &_gallery{
+                        img{
+                            height: 380px;
+                        }
+                    }
+                    &_video{
+                        height: 420px;
+                    }
+                }
+                &_right{
+                    max-width: 100%;
+                    min-height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page4_section1{
+        padding-inline: 24px;
+        &_inside{
+            gap: 28px;
+            h2{
+                font-size: 2.25rem;
+            }
+            &_main{
+                gap: 32px;
+                &_left{
+                    gap: 24px;
+                    &_hero{
+                        height: 260px;
+                        border-radius: 18px;
+                    }
+                    &_text{
+                        font-size: 1rem;
+                    }
+                    &_block{
+                        gap: 16px;
+                        h3{
+                            font-size: 1.5rem;
+                        }
+                    }
+                    &_gallery{
+                        flex-direction: column;
+                        gap: 16px;
+                        img{
+                            width: 100%;
+                            height: 280px;
+                            border-radius: 18px;
+                        }
+                    }
+                    &_video{
+                        height: 240px;
+                        border-radius: 18px;
+                        button{
+                            width: 73px;
+                            height: 73px;
+                            img{
+                                width: 34px;
+                                height: 34px;
+                            }
+                        }
+                    }
+                }
+                &_right{
+                    padding: 24px;
+                    gap: 28px;
+                    &_form_block{
+                        h3{
+                            font-size: 1.5rem;
+                        }
+                        form{
+                            gap: 20px;
+                            input{
+                                font-size: 1rem;
+                            }
+                            button{
+                                width: 100%;
+                                height: 48px;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    &_contact{
+                        h4{
+                            font-size: 1.375rem;
+                        }
+                        &_list{
+                            gap: 18px;
+                            &_item{
+                                p{
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

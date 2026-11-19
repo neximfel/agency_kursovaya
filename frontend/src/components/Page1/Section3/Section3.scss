@@ -163,3 +163,101 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .page1_section3{
+        &_black{
+            height: auto;
+            padding: 70px 30px;
+            &_inside{
+                height: auto;
+                gap: 48px;
+                &_title{
+                    div{
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 24px;
+                        h2{
+                            font-size: 3rem;
+                        }
+                    }
+                }
+                &_punkts{
+                    &_punkt{
+                        height: auto;
+                        padding-block: 32px;
+                        gap: 24px;
+                        &_title{
+                            gap: 20px;
+                            h3{
+                                font-size: 2.25rem;
+                            }
+                        }
+                        &_descr{
+                            gap: 24px;
+                            p{
+                                max-width: 360px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page1_section3{
+        &_black{
+            padding: 48px 24px;
+            &_inside{
+                gap: 36px;
+                &_title{
+                    text-align: center;
+                    p{
+                        display: none;
+                    }
+                    div{
+                        align-items: center;
+                        h2{
+                            font-size: 2.25rem;
+                        }
+                        a{
+                            width: 158px;
+                            height: 48px;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                &_punkts{
+                    &_punkt{
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 16px;
+                        padding-block: 28px;
+                        &_title{
+                            flex-direction: column;
+                            gap: 4px;
+                            h3{
+                                font-size: 1.75rem;
+                            }
+                        }
+                        &_descr{
+                            flex-direction: column;
+                            gap: 20px;
+                            p{
+                                max-width: 100%;
+                                font-size: 1rem;
+                            }
+                            a{
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

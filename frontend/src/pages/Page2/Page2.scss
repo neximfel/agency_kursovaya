@@ -4,3 +4,17 @@
     gap: 130px;
     margin-top: 60px;
 }
+
+@media (max-width: 1024px){
+    .page2_div_container1{
+        gap: 80px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .page2_div_container1{
+        gap: 48px;
+        margin-top: 0;
+    }
+}

@@ -161,3 +161,73 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .page2_section5{
+        padding: 70px 30px;
+        &_inside{
+            gap: 36px;
+            &_title{
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                &_left{
+                    h2{
+                        font-size: 3rem;
+                    }
+                }
+                &_description{
+                    max-width: 100%;
+                }
+            }
+            &_main{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+                justify-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page2_section5{
+        padding: 40px 24px;
+        &_inside{
+            gap: 28px;
+            &_title{
+                align-items: center;
+                text-align: center;
+                &_left{
+                    align-items: center;
+                    &_class{
+                        font-size: 1rem;
+                        height: 42px;
+                    }
+                    h2{
+                        font-size: 2.25rem;
+                    }
+                }
+                &_description{
+                    font-size: 1rem;
+                }
+            }
+            &_main{
+                grid-template-columns: 1fr;
+                &_card{
+                    max-width: 342px;
+                    &_info{
+                        height: 143px;
+                        h4{
+                            font-size: 1.5rem;
+                            line-height: 1.4;
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

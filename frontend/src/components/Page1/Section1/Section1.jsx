@@ -39,7 +39,7 @@ export default function Section1(){
                                 meets excellence in event planning. We take 
                                 pride in crafting extraordinary moments 
                                 tailored to your vision.</p>
-                            <Link to=""><p>Get Started</p> <div><img src={Photo.ArrowToRightPage1Section1} alt="" /></div></Link>
+                            <Link to="/pages"><p>Get Started</p> <div><img src={Photo.ArrowToRightPage1Section1} alt="" /></div></Link>
                         </div>
                         <div className="page1_section1_inside_top_pictures">
                             <img src={Photo.PicturesPage1Section1} alt="" />

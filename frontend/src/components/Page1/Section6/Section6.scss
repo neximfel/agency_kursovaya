@@ -170,3 +170,72 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .page1_section6{
+        padding: 70px 30px;
+        &_inside{
+            h2{
+                font-size: 3rem;
+            }
+            &_main{
+                &_slide{
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: auto;
+                    &_card{
+                        padding: 28px;
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3),
+                        &:nth-child(4){
+                            grid-column: auto;
+                            grid-row: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page1_section6{
+        padding: 48px 24px;
+        &_inside{
+            gap: 24px;
+            &_testimonials{
+                padding: 12px 18px;
+                p{
+                    font-size: 1rem;
+                }
+            }
+            h2{
+                font-size: 2.25rem;
+            }
+            &_main{
+                &_slide{
+                    grid-template-columns: 1fr;
+                    gap: 16px;
+                    padding-bottom: 36px;
+                    &_card{
+                        padding: 20px;
+                        gap: 18px;
+                        &_header{
+                            &_info{
+                                h4{
+                                    font-size: 1.125rem;
+                                }
+                            }
+                        }
+                        &_text{
+                            font-size: 1rem;
+                        }
+                        &_date{
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

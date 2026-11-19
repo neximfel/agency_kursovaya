@@ -91,7 +91,6 @@ img{
                         }
                     }
                     &_answer{
-                        margin-top: 12px;
                         font-size: 1.125rem;
                         line-height: 1.5;
                         font-weight: 400;
@@ -106,6 +105,56 @@ img{
                             img{
                                 transform: rotate(180deg);
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .page4_section2{
+        &_inside{
+            &_content{
+                max-width: 100%;
+                h2{
+                    font-size: 2.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page4_section2{
+        padding-inline: 24px;
+        &_inside{
+            &_content{
+                gap: 24px;
+                h2{
+                    font-size: 1.875rem;
+                }
+                &_list{
+                    gap: 20px;
+                    &_item{
+                        padding-bottom: 20px;
+                        &_question{
+                            gap: 14px;
+                            h4{
+                                font-size: 1.125rem;
+                            }
+                            img{
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                        &_answer{
+                            font-size: 1rem;
+                        }
+                        &.active{
+                            padding: 18px;
+                            border-radius: 18px;
                         }
                     }
                 }

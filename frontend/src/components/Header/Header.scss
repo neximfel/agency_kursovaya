@@ -59,9 +59,11 @@ img{
         &_nav{
             display: flex;
             max-width: 454px;
-            display: flex;
             width: 100%;
             justify-content: space-between;
+            &_mobile_buttons{
+                display: none;
+            }
             &_link{
                 color: #71717A;
                 font-size: 1.125rem;
@@ -107,6 +109,119 @@ img{
                     background: none;
                     border: 1px solid #525252;
                 }
+            }
+        }
+        &_burger{
+            display: none;
+            width: 36px;
+            height: 36px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            span{
+                width: 24px;
+                height: 2px;
+                background-color: #000000;
+                border-radius: 2px;
+                transition: all 0.25s ease;
+            }
+            &.open{
+                span:nth-child(1){
+                    transform: translateY(8px) rotate(45deg);
+                }
+                span:nth-child(2){
+                    opacity: 0;
+                }
+                span:nth-child(3){
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .header{
+        &_inside{
+            gap: 20px;
+            &_nav{
+                max-width: 380px;
+                &_link{
+                    font-size: 1rem;
+                    padding: 5px 8px;
+                }
+            }
+            &_buttons{
+                gap: 12px;
+                button{
+                    font-size: 1rem;
+                    height: 44px;
+                }
+                &_login{
+                    width: 104px;
+                }
+                &_signup{
+                    width: 116px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        height: 76px;
+        padding-inline: 24px;
+        position: relative;
+        z-index: 200;
+        &_inside{
+            height: auto;
+            &_logo{
+                width: 96px;
+                height: auto;
+            }
+            &_nav{
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                max-width: 100%;
+                background-color: #FFFFFF;
+                border-bottom: 1px solid #F5F5F5;
+                padding: 20px 0;
+                flex-direction: column;
+                align-items: center;
+                gap: 14px;
+                z-index: 200;
+                &.open{
+                    display: flex;
+                }
+                &_link{
+                    font-size: 1.125rem;
+                    padding: 6px 12px;
+                }
+                &_mobile_buttons{
+                    display: flex;
+                    gap: 12px;
+                    margin-top: 8px;
+                    button{
+                        border-radius: 100px;
+                        color: #000000;
+                        font-size: 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 44px;
+                    }
+                }
+            }
+            &_buttons{
+                display: none;
+            }
+            &_burger{
+                display: flex;
             }
         }
     }

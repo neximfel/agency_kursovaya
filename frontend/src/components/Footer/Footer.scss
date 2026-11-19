@@ -184,3 +184,108 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .footer{
+        &_top{
+            min-height: auto;
+            padding: 70px 30px;
+            &_inside{
+                flex-wrap: wrap;
+                align-items: flex-start;
+                gap: 48px;
+                &_left{
+                    max-width: 100%;
+                    h2{
+                        font-size: 3rem;
+                    }
+                }
+                &_right{
+                    max-width: 472px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .footer{
+        &_top{
+            padding: 48px 24px;
+            &_inside{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 48px;
+                &_left{
+                    align-items: center;
+                    gap: 20px;
+                    h2{
+                        font-size: 2.25rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                    &_socials{
+                        justify-content: center;
+                    }
+                }
+                &_mid{
+                    align-items: center;
+                    p{
+                        font-size: 1.25rem;
+                    }
+                    ul{
+                        align-items: center;
+                        gap: 14px;
+                        a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                &_right{
+                    align-items: center;
+                    gap: 18px;
+                    p{
+                        font-size: 1.375rem;
+                    }
+                    form{
+                        max-width: 100%;
+                        padding: 4px;
+                        input{
+                            padding-inline: 16px;
+                            width: 100%;
+                            min-width: 0;
+                            font-size: 0.875rem;
+                            &::placeholder{
+                                font-size: 0.875rem;
+                            }
+                        }
+                        button{
+                            width: 110px;
+                            height: 42px;
+                            flex-shrink: 0;
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+        }
+        &_bot{
+            padding: 20px 24px;
+            min-height: auto;
+            &_inside{
+                flex-direction: column;
+                gap: 18px;
+                text-align: center;
+                img{
+                    max-width: 100px;
+                }
+                p{
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+}

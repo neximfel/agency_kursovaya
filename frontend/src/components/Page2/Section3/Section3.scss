@@ -68,3 +68,31 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .page2_section3{
+        height: 480px;
+        button{
+            width: 160px;
+            height: 160px;
+            img{
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page2_section3{
+        height: 246px;
+        button{
+            width: 86px;
+            height: 86px;
+            img{
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+}

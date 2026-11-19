@@ -57,3 +57,31 @@ img{
         font-size: 4rem;
     }
 }
+
+@media (max-width: 1024px){
+    .yellow{
+        height: 100px;
+        h2{
+            font-size: 2.75rem;
+            gap: 14px;
+            svg{
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .yellow{
+        height: 58px;
+        h2{
+            font-size: 1.5rem;
+            gap: 10px;
+            svg{
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+}

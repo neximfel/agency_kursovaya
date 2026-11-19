@@ -101,3 +101,55 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .page3_section1{
+        min-height: auto;
+        padding: 50px 30px 70px;
+        &_inside{
+            gap: 44px;
+            h2{
+                font-size: 3rem;
+            }
+            &_items{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+                justify-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page3_section1{
+        padding: 32px 24px 48px;
+        &_inside{
+            gap: 28px;
+            h2{
+                font-size: 2.25rem;
+            }
+            &_items{
+                grid-template-columns: 1fr;
+                gap: 28px;
+                &_item{
+                    &_icon{
+                        width: 100px;
+                        height: 100px;
+                        img{
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                    h4{
+                        font-size: 1.5rem;
+                        white-space: normal;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

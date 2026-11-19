@@ -5,3 +5,19 @@
     margin-top: 60px;
     margin-bottom: 130px;
 }
+
+@media (max-width: 1024px){
+    .page4_div_container1{
+        gap: 70px;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px){
+    .page4_div_container1{
+        gap: 48px;
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+}

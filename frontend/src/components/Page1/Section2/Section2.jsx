@@ -42,7 +42,7 @@ export default function Section2(){
                                 <p>Professional Coordination</p>
                             </div>
                         </div>
-                        <Link to="">Learn More <img src={Photo.ArrowToRightPage1Section2} alt="" /></Link>
+                        <Link to="/pages">Learn More <img src={Photo.ArrowToRightPage1Section2} alt="" /></Link>
                     </div>
                 </div>
             </section>

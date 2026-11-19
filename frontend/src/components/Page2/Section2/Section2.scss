@@ -131,3 +131,81 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .page2_section2{
+        padding: 70px 30px;
+        &_inside{
+            flex-direction: column;
+            gap: 40px;
+            &_left,
+            &_right{
+                max-width: 100%;
+            }
+            &_right{
+                &_title{
+                    h2{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page2_section2{
+        padding: 40px 24px;
+        &_inside{
+            gap: 32px;
+            &_left{
+                gap: 16px;
+                div{
+                    gap: 12px;
+                    img{
+                        width: calc(50% - 6px);
+                        object-fit: cover;
+                    }
+                }
+            }
+            &_right{
+                gap: 32px;
+                &_title{
+                    align-items: center;
+                    text-align: center;
+                    &_class{
+                        font-size: 1rem;
+                        padding: 8px 20px;
+                    }
+                    h2{
+                        font-size: 2.25rem;
+                    }
+                    &_description{
+                        font-size: 1rem;
+                    }
+                }
+                &_perks{
+                    gap: 24px;
+                    &_cat{
+                        align-items: center;
+                        text-align: center;
+                        div{
+                            width: 56px;
+                            height: 56px;
+                            img{
+                                width: 32px;
+                                height: 32px;
+                            }
+                        }
+                        h5{
+                            font-size: 1.75rem;
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

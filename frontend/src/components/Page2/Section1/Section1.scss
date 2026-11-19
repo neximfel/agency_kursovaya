@@ -119,3 +119,71 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .page2_section1{
+        padding: 50px 30px;
+        &_inside{
+            gap: 36px;
+            h2{
+                font-size: 3rem;
+            }
+            &_main{
+                flex-direction: column;
+                align-items: center;
+                gap: 32px;
+                &_left,
+                &_right{
+                    max-width: 100%;
+                    gap: 28px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page2_section1{
+        padding: 32px 24px 40px;
+        &_inside{
+            gap: 24px;
+            h2{
+                font-size: 2.25rem;
+                text-align: center;
+            }
+            &_main{
+                gap: 24px;
+                &_left{
+                    gap: 24px;
+                    &_title{
+                        align-items: center;
+                        text-align: center;
+                        p{
+                            font-size: 1rem;
+                            padding: 8px 20px;
+                        }
+                    }
+                }
+                &_right{
+                    gap: 24px;
+                    &_text{
+                        align-items: center;
+                        text-align: center;
+                        gap: 24px;
+                        p{
+                            font-size: 1rem;
+                        }
+                        a{
+                            width: 149px;
+                            height: 48px;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -70,3 +70,31 @@ img{
         }
     }
 }
+
+@media (max-width: 1024px){
+    .page3_section3{
+        height: 480px;
+        button{
+            width: 100px;
+            height: 100px;
+            img{
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .page3_section3{
+        height: 230px;
+        button{
+            width: 73px;
+            height: 73px;
+            img{
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+}
